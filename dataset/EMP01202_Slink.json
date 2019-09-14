@@ -1,0 +1,12 @@
+{
+	"name": "EMP01202_Slink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01202_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
