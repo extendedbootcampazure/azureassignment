@@ -1,0 +1,34 @@
+{
+	"name": "EMPH2404_stage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2404_AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2404_Stage"
+		}
+	}
+}
