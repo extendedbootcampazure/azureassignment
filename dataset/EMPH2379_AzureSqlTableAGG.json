@@ -1,0 +1,31 @@
+{
+	"name": "EMPH2379_AzureSqlTableAGG",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2379_SQLDB_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "varchar"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2379_EmployeeYTD"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

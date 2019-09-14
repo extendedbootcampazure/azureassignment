@@ -1,0 +1,12 @@
+{
+	"name": "EMP2240_AzureSqlDatabaseLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=extendedbootcampsql.database.windows.net;initial catalog=extendedbootcampsql;user id=extendedbootcampazure",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkVYVEVOREVEQk9PVENBTVBBU1NJR05NRU5UQURGXzYzNGNhNmMyLWZmMDEtNGQ1OC04MGU0LWZkOTUyZTdkYjBlNSINCn0="
+		}
+	}
+}

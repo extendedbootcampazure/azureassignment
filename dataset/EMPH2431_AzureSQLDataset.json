@@ -1,0 +1,35 @@
+{
+	"name": "EMPH2431_AzureSQLDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2431_SQLLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2431_Employee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,35 @@
+{
+	"name": "emph2444_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "emph2444_database",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmpID",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Sal",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emph2444_EmpDetails"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

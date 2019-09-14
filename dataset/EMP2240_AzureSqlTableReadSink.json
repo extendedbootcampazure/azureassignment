@@ -1,0 +1,17 @@
+{
+	"name": "EMP2240_AzureSqlTableReadSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP2240_AzureSqlLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2240_Employee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

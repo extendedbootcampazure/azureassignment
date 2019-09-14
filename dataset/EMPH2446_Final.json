@@ -1,0 +1,31 @@
+{
+	"name": "EMPH2446_Final",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2466_Database",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmpID",
+				"type": "varchar"
+			},
+			{
+				"name": "YTDSal",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emph2446_Final"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
