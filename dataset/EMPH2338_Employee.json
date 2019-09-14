@@ -1,0 +1,35 @@
+{
+	"name": "EMPH2338_Employee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2338_Employee",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "EMPH2338",
+			"table": "EmployeeFinalData"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,30 @@
+{
+	"name": "EMPH2383_OutputAzureSqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2383_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "varchar"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2383_OutputTable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
