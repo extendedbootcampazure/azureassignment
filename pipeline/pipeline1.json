@@ -28,7 +28,9 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE [dbo].[EMPH2390_Employee]",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false
 				},
@@ -73,7 +75,7 @@
 				}
 			},
 			{
-				"name": "Copy Data1",
+				"name": "Create FinalCSV",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -92,8 +94,34 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "EMPH2390_EmployeeYTD",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "EMPH2390_CSVFinal",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
