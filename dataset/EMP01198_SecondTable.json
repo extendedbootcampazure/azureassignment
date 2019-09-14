@@ -1,0 +1,34 @@
+{
+	"name": "EMP01198_SecondTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01198_DestinationLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMP01198_EmployeeData"
+		}
+	}
+}
