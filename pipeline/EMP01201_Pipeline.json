@@ -41,13 +41,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "EMP01201_CPDT",
+						"referenceName": "EMP01201_Dataset",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "EMP01201_CPDT",
+						"referenceName": "EMP01201_Dataset",
 						"type": "DatasetReference"
 					}
 				]
