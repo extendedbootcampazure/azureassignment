@@ -1,0 +1,36 @@
+{
+	"name": "EMPH2390_CSVFinal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2390_BlobLinkerService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Final.csv",
+				"container": "emph2390"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "String"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "String"
+			}
+		]
+	}
+}
