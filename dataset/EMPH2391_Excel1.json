@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "EMPH2391_Excel1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "EMPH2391_AzureBlobStorage",
