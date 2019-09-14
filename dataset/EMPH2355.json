@@ -5,6 +5,11 @@
 			"referenceName": "EMPH2355_LinkedService",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Path": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
