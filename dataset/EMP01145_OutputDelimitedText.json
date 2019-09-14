@@ -1,0 +1,37 @@
+{
+	"name": "EMP01145_OutputDelimitedText",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01145_BlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "final.csv",
+				"folderPath": "Output",
+				"container": "emp01145"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "String"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "String"
+			}
+		]
+	}
+}
