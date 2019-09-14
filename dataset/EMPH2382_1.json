@@ -5,6 +5,9 @@
 			"referenceName": "EMPH2382_BlobLinkedService",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "EMPH2382_SourceData"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
