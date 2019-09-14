@@ -1,0 +1,30 @@
+{
+	"name": "EMP01145_AzureSqlOutputTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01145_BossData",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMP01145_Output"
+		}
+	}
+}
