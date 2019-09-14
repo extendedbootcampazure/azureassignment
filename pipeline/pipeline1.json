@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Data1",
+				"name": "emph2386copyfromblob",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -19,6 +19,20 @@
 				}
 			}
 		],
+		"parameters": {
+			"csvfile1": {
+				"type": "string",
+				"defaultValue": "1.csv"
+			},
+			"csvfile2": {
+				"type": "string",
+				"defaultValue": "2.csv"
+			},
+			"csvfile3": {
+				"type": "string",
+				"defaultValue": "3.csv"
+			}
+		},
 		"annotations": []
 	}
 }
