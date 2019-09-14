@@ -1,0 +1,34 @@
+{
+	"name": "EMP01145_AzureSqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01145_BossData",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Month",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMP01145_EmployeeData"
+		}
+	}
+}
