@@ -1,0 +1,34 @@
+{
+	"name": "EMPH2390_Employee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2390_SQLLinkerService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2390_Employee"
+		}
+	}
+}
