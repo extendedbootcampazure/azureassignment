@@ -98,7 +98,7 @@
 					"batchCount": 3,
 					"activities": [
 						{
-							"name": "Copy Data1",
+							"name": "EMP01145_CopyActivity",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
