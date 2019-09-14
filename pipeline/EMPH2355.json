@@ -62,8 +62,10 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
-										"wildcardFolderPath": "emph2355",
-										"wildcardFileName": "@item().ID.*",
+										"wildcardFileName": {
+											"value": "@{item().ID}.*",
+											"type": "Expression"
+										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
