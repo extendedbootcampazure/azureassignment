@@ -1,0 +1,21 @@
+{
+	"name": "EMP01202_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01202_BlobLinkerService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "emp01202"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
