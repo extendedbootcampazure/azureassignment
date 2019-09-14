@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "EMP01201_Outputdata",
+						"referenceName": "EMP01201_Slink",
 						"type": "DatasetReference"
 					}
 				]
