@@ -1,0 +1,12 @@
+{
+	"name": "EMPH2413AzureSqlDatabase",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=extendedbootcampsql.database.windows.net;initial catalog=extendedbootcampsql;user id=extendedbootcampazure",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkVYVEVOREVEQk9PVENBTVBBU1NJR05NRU5UQURGXzE3YjA2MzE2LTFjMWItNGE2ZC1hOTc2LTg2YjE3MDQyNTM4YyINCn0="
+		}
+	}
+}

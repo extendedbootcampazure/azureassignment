@@ -1,0 +1,34 @@
+{
+	"name": "EMPH2404_final_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2404_AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "EMPH2404"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "YTDSalary",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2404_Final"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
