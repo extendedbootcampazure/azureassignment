@@ -1,0 +1,40 @@
+{
+	"name": "EMP01145_InputDelimitedText",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01146_AzureBS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "input",
+				"container": "emp01146"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "String"
+			},
+			{
+				"name": "Month",
+				"type": "String"
+			},
+			{
+				"name": "Salary",
+				"type": "String"
+			}
+		]
+	}
+}
