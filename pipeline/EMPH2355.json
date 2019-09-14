@@ -98,6 +98,33 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "EMPH2355_SPName",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "EMPH2355_ForEach",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[usp_EMPH2355_VaibhavA]"
+				},
+				"linkedServiceName": {
+					"referenceName": "EMPH2355_LinkedService_AzureSQLDB",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
