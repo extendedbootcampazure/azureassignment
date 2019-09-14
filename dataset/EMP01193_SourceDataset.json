@@ -1,0 +1,12 @@
+{
+	"name": "EMP01193_SourceDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01193_SourceDataset",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
