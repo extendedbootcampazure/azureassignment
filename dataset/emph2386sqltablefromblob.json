@@ -1,0 +1,35 @@
+{
+	"name": "emph2386sqltablefromblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "emph2386connecttodql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emph2386copyfromblob"
+		}
+	}
+}
