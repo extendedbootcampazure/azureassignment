@@ -22,7 +22,8 @@
 					"dataset": {
 						"referenceName": "EMPH2355_Sink",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
