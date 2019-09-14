@@ -1,0 +1,40 @@
+{
+	"name": "EMPH2403_1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2403_BlobLinkerService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "1.csv",
+				"container": "emph2403"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "String"
+			},
+			{
+				"name": "Month",
+				"type": "String"
+			},
+			{
+				"name": "Salary",
+				"type": "String"
+			}
+		]
+	}
+}
