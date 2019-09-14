@@ -26,7 +26,8 @@
 						}
 					},
 					"sink": {
-						"type": "SqlServerSink"
+						"type": "SqlServerSink",
+						"preCopyScript": "truncate table dbo.emph2386copyfromblob"
 					},
 					"enableStaging": false,
 					"translator": {
