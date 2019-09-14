@@ -1,0 +1,22 @@
+{
+	"name": "EMPH2417_BlobDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2417_BlobLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "emph2417"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
