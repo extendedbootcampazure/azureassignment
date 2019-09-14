@@ -54,7 +54,9 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "AzureSqlSink",
+						"preCopyScript": "TRUNCATE TABLE EMP01146_EmployeeData",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false
 				},
@@ -74,7 +76,14 @@
 			{
 				"name": "OutputFile_CopyData",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Stored Procedure",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
