@@ -1,0 +1,33 @@
+{
+	"name": "EMPH2383_AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2383_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2383_InputTable"
+		}
+	}
+}
