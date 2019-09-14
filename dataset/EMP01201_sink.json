@@ -1,0 +1,12 @@
+{
+	"name": "EMP01201_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMP01201_Dest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
