@@ -1,0 +1,35 @@
+{
+	"name": "EMPH2280_Azure",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EMPH2280_AzureLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeId",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "EMPH2280_Staging"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

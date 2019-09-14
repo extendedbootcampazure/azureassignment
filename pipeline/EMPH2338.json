@@ -1,0 +1,98 @@
+{
+	"name": "EMPH2338",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*.csv",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "BranchName",
+									"type": "String"
+								},
+								"sink": {
+									"name": "BranchName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "EmployeeId",
+									"type": "String"
+								},
+								"sink": {
+									"name": "EmployeeID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Month",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Month",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Salary",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Salary",
+									"type": "Int32"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "EMPH2338_AllFiles",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "EMPH2338_Employee",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
