@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "EMP01201_Dataset",
+						"referenceName": "EMP01201_Outputdata",
 						"type": "DatasetReference"
 					}
 				]
