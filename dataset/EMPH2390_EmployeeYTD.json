@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "EMPH2390_EmployeeYTD",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "EMPH2390_SQLLinkerService",
