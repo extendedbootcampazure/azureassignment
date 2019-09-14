@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "EMP01145_DelimitedText",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "EMP01145_BlobStorage",
