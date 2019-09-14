@@ -1,5 +1,5 @@
 {
-	"name": "EMP01201_Outputdata",
+	"name": "EMP01201_Slink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "EMP01201_Output",
