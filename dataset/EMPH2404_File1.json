@@ -1,5 +1,5 @@
 {
-	"name": "File1",
+	"name": "EMPH2404_File1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "EMPH2404_AzureBlobStorage1",
